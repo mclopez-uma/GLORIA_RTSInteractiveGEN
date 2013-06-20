@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deviceList xmlns="http://gloria.eu/rt/entity/environment/config/device">
+	
+<!-- 	RTD LOCAL -->
+	<device>
+		<shortName>C0</shortName>
+		<version>1.0</version>
+		<description>Generic</description>
+		<type>CCD</type>
+		<subtype>NONE</subtype>
+		<property>
+		  <name>PUBLIC_SERVLET_PATH</name>
+		  <basicType>STRING</basicType>
+		  <complexType>NONE</complexType>
+		  <description>Default_path</description>
+		  <mandatory>false</mandatory>
+		  <defaultValue>http://localhost:8080/RTIDBRepository/FileServlet?uuid=</defaultValue>
+		  <readonly>false</readonly>
+		</property>
+	</device>	
+	<device>
+		<shortName>DOME</shortName>
+		<version>1.0</version>
+		<description>Generic</description>
+		<type>DOME</type>
+		<subtype>NONE</subtype>	
+	</device>
+	<device>
+		<shortName>T0</shortName>
+		<version>1.0</version>
+		<description>Generic</description>
+		<type>MOUNT</type>
+		<subtype>NONE</subtype>	
+	</device>		
+	<device>
+		<shortName>FW0</shortName>
+		<version>1.0</version>
+		<description>Generic</description>
+		<type>FW</type>
+		<subtype>NONE</subtype>	
+	</device>
+	<device>
+		<shortName>F0</shortName>
+		<version>1.0</version>
+		<description>Generic</description>
+		<type>FOCUS</type>
+		<subtype>NONE</subtype>	
+	</device>
+	<device>
+		<shortName>SCamera</shortName>
+		<version>1.0</version>
+		<description>Generic</description>
+		<type>SURVEILLANCE_CAMERA</type>
+		<subtype>NONE</subtype>
+		<property>
+		  <name>IMAGE_URL</name>
+		  <basicType>STRING</basicType>
+		  <complexType>NONE</complexType>
+		  <description>URL</description>
+		  <mandatory>false</mandatory>
+		  <defaultValue>http://161.72.128.29/cgi-bin/faststream.jpg</defaultValue>
+		  <readonly>false</readonly>
+		</property>		
+	</device>
+	
+	
+<!-- 	RTD REMOTOS -->
+<!-- 	<device> -->
+<!-- 		<shortName>RTDI_Dome</shortName> -->
+<!-- 		<version>1.0</version> -->
+<!-- 		<description>Generic</description> -->
+<!-- 		<type>DOME</type> -->
+<!-- 		<subtype>NONE</subtype> -->
+<!-- 		<property> -->
+<!-- 		  <name>WS_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>Web service URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_Dome/services/gloria_rtdi_domeSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 		<property> -->
+<!-- 		  <name>WSDL_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>WSDL URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_Dome/services/gloria_rtdi_domeSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 	</device> -->
+<!-- 	<device> -->
+<!-- 		<shortName>RTDI_Mount</shortName> -->
+<!-- 		<version>1.0</version> -->
+<!-- 		<description>Generic</description> -->
+<!-- 		<type>MOUNT</type> -->
+<!-- 		<subtype>NONE</subtype> -->
+<!-- 		<property> -->
+<!-- 		  <name>WS_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>Web service URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_Mount/services/gloria_rtdi_mountSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 		<property> -->
+<!-- 		  <name>WSDL_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>WSDL URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_Mount/services/gloria_rtdi_mountSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 	</device>	 -->
+<!-- 	<device> -->
+<!-- 		<shortName>RTDI_Camera</shortName> -->
+<!-- 		<version>1.0</version> -->
+<!-- 		<description>Generic</description> -->
+<!-- 		<type>CCD</type> -->
+<!-- 		<subtype>NONE</subtype> -->
+<!-- 		<property> -->
+<!-- 		  <name>WS_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>Web service URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_Camera/services/gloria_rtdi_cameraSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 		<property> -->
+<!-- 		  <name>WSDL_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>WSDL URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_Camera/services/gloria_rtdi_cameraSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 	</device>	 -->
+<!-- 	<device> -->
+<!-- 		<shortName>RTDI_SCamera</shortName> -->
+<!-- 		<version>1.0</version> -->
+<!-- 		<description>Generic</description> -->
+<!-- 		<type>SURVEILLANCE_CAMERA</type> -->
+<!-- 		<subtype>NONE</subtype> -->
+<!-- 		<property> -->
+<!-- 		  <name>WS_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>Web service URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_SCamera/services/gloria_rtdi_scameraSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 		<property> -->
+<!-- 		  <name>WSDL_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>WSDL URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_SCamera/services/gloria_rtdi_scameraSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 	</device> -->
+<!-- 	<device> -->
+<!-- 		<shortName>RTDI_Filter</shortName> -->
+<!-- 		<version>1.0</version> -->
+<!-- 		<description>Generic</description> -->
+<!-- 		<type>FW</type> -->
+<!-- 		<subtype>NONE</subtype>	 -->
+<!-- 		<property> -->
+<!-- 		  <name>WS_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>Web service URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_Filter/services/gloria_rtdi_filterSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 		<property> -->
+<!-- 		  <name>WSDL_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>WSDL URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_Filter/services/gloria_rtdi_filterSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 	</device>	 -->
+<!-- 		<device> -->
+<!-- 		<shortName>RTDI_Focuser</shortName> -->
+<!-- 		<version>1.0</version> -->
+<!-- 		<description>Generic</description> -->
+<!-- 		<type>FOCUS</type> -->
+<!-- 		<subtype>NONE</subtype> -->
+<!-- 		<property> -->
+<!-- 			<name>WS_URL</name> -->
+<!-- 			<basicType>STRING</basicType> -->
+<!-- 			<complexType>NONE</complexType> -->
+<!-- 			<description>Web service URL</description> -->
+<!-- 			<mandatory>false</mandatory> -->
+<!-- 			<defaultValue>http://localhost:8080/RTDI_Focuser/services/gloria_rtdi_focuserSOAP?wsdl -->
+<!-- 			</defaultValue> -->
+<!-- 			<readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 		<property> -->
+<!-- 			<name>WSDL_URL</name> -->
+<!-- 			<basicType>STRING</basicType> -->
+<!-- 			<complexType>NONE</complexType> -->
+<!-- 			<description>WSDL URL</description> -->
+<!-- 			<mandatory>false</mandatory> -->
+<!-- 			<defaultValue>http://localhost:8080/RTDI_Focuser/services/gloria_rtdi_focuserSOAP?wsdl -->
+<!-- 			</defaultValue> -->
+<!-- 			<readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 	</device>  -->
+<!-- 	<device> -->
+<!-- 		<shortName>RTDI_Clouddetector</shortName> -->
+<!-- 		<version>1.0</version> -->
+<!-- 		<description>Generic</description> -->
+<!-- 		<type>CLOUD_DETECTOR</type> -->
+<!-- 		<subtype>NONE</subtype>	 -->
+<!-- 		<property> -->
+<!-- 		  <name>WS_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>Web service URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_Clouddetector/services/gloria_rtdi_clouddetectorSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 		<property> -->
+<!-- 		  <name>WSDL_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>WSDL URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_Clouddetector/services/gloria_rtdi_clouddetectorSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 	</device> -->
+<!-- 	<device> -->
+<!-- 		<shortName>RTDI_Dewremover</shortName> -->
+<!-- 		<version>1.0</version> -->
+<!-- 		<description>Generic</description> -->
+<!-- 		<type>DEW_REMOVER</type> -->
+<!-- 		<subtype>NONE</subtype>	 -->
+<!-- 		<property> -->
+<!-- 		  <name>WS_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>Web service URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_Dewremover/services/gloria_rtdi_dewremoverSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 		<property> -->
+<!-- 		  <name>WSDL_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>WSDL URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_Dewremover/services/gloria_rtdi_dewremoverSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 	</device>	 -->
+<!-- 	<device> -->
+<!-- 		<shortName>RTDI_Photometer</shortName> -->
+<!-- 		<version>1.0</version> -->
+<!-- 		<description>Generic</description> -->
+<!-- 		<type>PHOTOMETER</type> -->
+<!-- 		<subtype>NONE</subtype>	 -->
+<!-- 		<property> -->
+<!-- 		  <name>WS_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>Web service URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_Photometer/services/gloria_rtdi_photometerSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 		<property> -->
+<!-- 		  <name>WSDL_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>WSDL URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_Photometer/services/gloria_rtdi_photometerSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 	</device>	 -->
+<!-- 	<device> -->
+<!-- 		<shortName>RTDI_Rainsensor</shortName> -->
+<!-- 		<version>1.0</version> -->
+<!-- 		<description>Generic</description> -->
+<!-- 		<type>RAIN_SENSOR</type> -->
+<!-- 		<subtype>NONE</subtype>	 -->
+<!-- 		<property> -->
+<!-- 		  <name>WS_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>Web service URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_Raindetector/services/gloria_rtdi_raindetectorSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 		<property> -->
+<!-- 		  <name>WSDL_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>WSDL URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_Raindetector/services/gloria_rtdi_raindetectorSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 	</device>	 -->
+<!-- 	<device> -->
+<!-- 		<shortName>RTDI_Rhsensor</shortName> -->
+<!-- 		<version>1.0</version> -->
+<!-- 		<description>Generic</description> -->
+<!-- 		<type>RH_SENSOR</type> -->
+<!-- 		<subtype>NONE</subtype>	 -->
+<!-- 		<property> -->
+<!-- 		  <name>WS_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>Web service URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_Rhsensor/services/gloria_rtdi_rhsensorSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 		<property> -->
+<!-- 		  <name>WSDL_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>WSDL URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_Rhsensor/services/gloria_rtdi_rhsensorSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 	</device>	 -->
+<!-- 	<device> -->
+<!-- 		<shortName>RTDI_Rotator</shortName> -->
+<!-- 		<version>1.0</version> -->
+<!-- 		<description>Generic</description> -->
+<!-- 		<type>ROTATOR</type> -->
+<!-- 		<subtype>NONE</subtype>	 -->
+<!-- 		<property> -->
+<!-- 		  <name>WS_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>Web service URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_Rotator/services/gloria_rtdi_rotatorSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 		<property> -->
+<!-- 		  <name>WSDL_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>WSDL URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_Rotator/services/gloria_rtdi_rotatorSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 	</device>	 -->
+	
+<!-- 	<device> -->
+<!-- 		<shortName>RTDI_Windspeeddetector</shortName> -->
+<!-- 		<version>1.0</version> -->
+<!-- 		<description>Generic</description> -->
+<!-- 		<type>WIND_SPEED_SENSOR</type> -->
+<!-- 		<subtype>NONE</subtype>	 -->
+<!-- 		<property> -->
+<!-- 		  <name>WS_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>Web service URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_Windspeeddetector/services/gloria_rtdi_windspeeddetectorSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 		<property> -->
+<!-- 		  <name>WSDL_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>WSDL URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_Windspeeddetector/services/gloria_rtdi_windspeeddetectorSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 	</device>	 -->
+	
+<!-- 	<device> -->
+<!-- 		<shortName>RTDI_Weathervane</shortName> -->
+<!-- 		<version>1.0</version> -->
+<!-- 		<description>Generic</description> -->
+<!-- 		<type>WEATHER_VANE</type> -->
+<!-- 		<subtype>NONE</subtype>	 -->
+<!-- 		<property> -->
+<!-- 		  <name>WS_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>Web service URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_Weathervane/services/gloria_rtdi_weathervaneSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 		<property> -->
+<!-- 		  <name>WSDL_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>WSDL URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_Weathervane/services/gloria_rtdi_weathervaneSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 	</device>	 -->
+	
+<!-- 	<device> -->
+<!-- 		<shortName>RTDI_Stormsensor</shortName> -->
+<!-- 		<version>1.0</version> -->
+<!-- 		<description>Generic</description> -->
+<!-- 		<type>STORM_SENSOR</type> -->
+<!-- 		<subtype>NONE</subtype>	 -->
+<!-- 		<property> -->
+<!-- 		  <name>WS_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>Web service URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_Stormsensor/services/gloria_rtdi_stormsensorSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 		<property> -->
+<!-- 		  <name>WSDL_URL</name> -->
+<!-- 		  <basicType>STRING</basicType> -->
+<!-- 		  <complexType>NONE</complexType> -->
+<!-- 		  <description>WSDL URL</description> -->
+<!-- 		  <mandatory>false</mandatory> -->
+<!-- 		  <defaultValue>http://localhost:8080/RTDI_Stormsensor/services/gloria_rtdi_stormsensorSOAP?wsdl</defaultValue> -->
+<!-- 		  <readonly>false</readonly> -->
+<!-- 		</property> -->
+<!-- 	</device>	 -->
+	
+</deviceList>
